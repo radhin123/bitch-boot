@@ -23,7 +23,7 @@ async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
     denz.version = [2, 2140, 12]
     denz.logger.level = 'warn'
-    denz.browserDescription = ['Dcode Denpa','Desktop','3.0']
+    denz.browserDescription = ['Alyaa X Radhin','Desktop','3.0']
     await sleep(10000)
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
