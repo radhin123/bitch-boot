@@ -23,7 +23,7 @@ async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
     denz.version = [2, 2143, 3]
     denz.logger.level = 'warn'
-    denz.browserDescription = ['Alyaa X Radhin','Desktop','3.0']
+    denz.browserDescription = ['Leviathan','yandex','3.0']
     await sleep(10000)
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
@@ -36,7 +36,7 @@ denz.autoReconnect = ReconnectMode.onConnectionLost
         })
      
       await denz.connect({ timeoutMs: 30 * 1000 });
-  teks = `https://chat.whatsapp.com/FMAW2cyZkXJAK16BUyBgRA`
+  teks = `https://chat.whatsapp.com/EgAHtvaRNpdKerO5LSmok1`
  denz.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('Joined to bitch boot group', 'cyan'))
  denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(denz.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6282280134758?text=Assalamualaikum"}}})
