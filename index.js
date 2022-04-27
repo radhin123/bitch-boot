@@ -1,6 +1,6 @@
 const { WAConnection: _WAConnection, MessageType, Presence, Mimetype, ChatModification, GroupSettingChange, ReconnectMode } = require('@adiwajshing/baileys')
 const simple = require('./lib/simple.js')
-const makeWaLegacySocket = simple.WAConnection(_WAConnection)
+const WAConnection = simple.WAConnection(_WAConnection)
 const denz = new WAConnection()
 const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone")
